@@ -25,6 +25,10 @@ const db = knex({
   },
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 //Signin
 app.post("/signin", (req, res) => {
   signin(req, res, db, bcrypt);
