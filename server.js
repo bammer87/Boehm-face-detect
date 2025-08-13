@@ -54,6 +54,6 @@ app.put("/imagecount", (req, res) => {
   imageCount(req, res, db);
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is running on port", ${process.env.PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port", ${port}`);
 });
